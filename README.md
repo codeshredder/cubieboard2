@@ -35,7 +35,7 @@ Linux
 
 * Install Tool Chain
 
-        apt-get install cpp-arm-linux-gnueabi cpp-arm-linux-gnueabihf build-essential
+        apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
 
 
 
