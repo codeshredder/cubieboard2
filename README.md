@@ -6,11 +6,13 @@
 Authors
 ==========
 
-codeshredder <https://github.com/codeshredder>
+`codeshredder <https://github.com/codeshredder>`_ 
 
 
 Reference
 ==========
+
+
 
 
 About Cubieboard
