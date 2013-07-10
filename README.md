@@ -1,4 +1,47 @@
-cubieboard2
+==========================================================
+  Software and userguide about Cubieboard2
+==========================================================
+
+
+Authors
+==========
+
+codeshredder <https://github.com/codeshredder>
+
+
+Reference
+==========
+
+
+About Cubieboard
+==========
+
+
+
+
+Linux
+==========
+
+
+
+
+
+Android
+==========
+
+
+
+
+
+
+Licensing
+============
+
+This project is licensed under Creative Commons License.
+
+To view a copy of this license, visit [ http://creativecommons.org/licenses/ ].
+
+Contacts
 ===========
 
-software about cubieboard2
+codeshredder  : evilforce@gmail.com
