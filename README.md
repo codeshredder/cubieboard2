@@ -1,4 +1,3 @@
-
 Software and User Guide
 ==========================================================
 
@@ -12,6 +11,16 @@ Authors
 Reference
 ----------
 
+
+http://cubieboard.org/
+
+http://cn.cubieboard.org/
+
+http://linux-sunxi.org/
+
+https://github.com/cubieboard2/manifests
+
+https://github.com/linux-sunxi
 
 
 About Cubieboard
