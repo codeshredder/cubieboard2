@@ -1,12 +1,13 @@
 ==========================================================
-  Software and userguide about Cubieboard2
+  Software and User Guide
 ==========================================================
 
 
 Authors
 ==========
 
-`codeshredder <https://github.com/codeshredder>`_ 
+[codeshredder](https://github.com/codeshredder)
+
 
 Reference
 ==========
