@@ -12,10 +12,6 @@ Reference
 ----------
 
 
-http://cubieboard.org/
-
-http://cn.cubieboard.org/
-
 http://linux-sunxi.org/
 
 https://github.com/cubieboard2/
@@ -26,6 +22,10 @@ https://github.com/linux-sunxi
 About Cubieboard
 ----------
 
+
+http://cubieboard.org/
+
+http://cn.cubieboard.org/
 
 
 
