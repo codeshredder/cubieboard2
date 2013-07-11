@@ -33,13 +33,13 @@ Linux
 ----------
 
 
-* Install Tool Chain
+* install tool chain
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
         apt-get install linaro-image-tools
 
-* Compile Kernel
+* build kernel
 
         make distclean ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
         make cubieboard2_defconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
@@ -53,12 +53,17 @@ Linux
         make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 
-* Make hwpack
+* build gpu driver
+
+        http://linux-sunxi.org/Mali400
+
+
+* make hwpack
 
 
 
 
-* Make image
+* make image
 
 
 
