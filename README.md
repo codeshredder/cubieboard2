@@ -38,6 +38,15 @@ Linux
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
 
+* Compile Kernel
+
+        make distclean ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+        make cubieboard2_defconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+        
+        make menuconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+        
+        make uImage -j8 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+
 
 Android
 ----------
