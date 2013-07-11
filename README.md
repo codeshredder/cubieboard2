@@ -67,7 +67,9 @@ Linux
 Android
 ----------
 
+* Reference
 
+        http://releases.linaro.org/latest/android/galaxynexus
 
 
 
