@@ -46,6 +46,10 @@ Linux
         make menuconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
         
         make uImage -j8 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+        make modules -j8 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+        
+        cp arch/arm/boot/uImage ../output
+        make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 
 Android
