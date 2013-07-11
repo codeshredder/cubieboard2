@@ -37,6 +37,7 @@ Linux
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
+        apt-get install linaro-image-tools
 
 * Compile Kernel
 
@@ -50,6 +51,17 @@ Linux
         
         cp arch/arm/boot/uImage ../output
         make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
+
+
+* Make hwpack
+
+
+
+
+* Make image
+
+
+
 
 
 Android
