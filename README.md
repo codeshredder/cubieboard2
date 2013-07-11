@@ -56,6 +56,7 @@ Linux
 * build gpu driver
 
         http://linux-sunxi.org/Mali400
+        http://linux-sunxi.org/Binary_drivers
 
 
 * make hwpack
