@@ -36,7 +36,7 @@ Linux
 * Install Tool Chain
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
-
+        apt-get install u-boot-tools
 
 
 Android
