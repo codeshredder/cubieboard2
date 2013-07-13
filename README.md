@@ -28,12 +28,25 @@ http://cubieboard.org/
 http://cn.cubieboard.org/
 
 
+Tools
+----------
+
+* TTL and console
+
+
+
+
+* LiveSuit
+
+
+
+
 
 Linux
 ----------
 
 
-* install tool chain
+* install tool chain(ubuntu 12.04 64bit)
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
@@ -76,6 +89,10 @@ Android
 * Reference
 
         http://releases.linaro.org/latest/android/galaxynexus
+
+
+* install tool chain(ubuntu 12.04 64bit)
+ 
 
 
 
