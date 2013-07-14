@@ -18,6 +18,8 @@ https://github.com/cubieboard2/
 
 https://github.com/linux-sunxi
 
+http://source.android.com/source/initializing.html
+
 
 About Cubieboard
 ----------
