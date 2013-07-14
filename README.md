@@ -86,7 +86,7 @@ Linux
 Android
 ----------
 
-* prepare environment (ubuntu 12.04 64bit)
+* prepare java environment (ubuntu 12.04 64bit)
 
         #remove old java
         
@@ -118,6 +118,15 @@ Android
         #check java exist
         java -version
 
+* prepare android environment (ubuntu 12.04 64bit)
+
+        apt-get install git gnupg flex bison gperf build-essential \
+        zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+        libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+        libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+        python-markdown libxml2-utils xsltproc zlib1g-dev:i386
+        
+        ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 
 
 * download sdk
