@@ -95,9 +95,6 @@ Android
         apt-get update
         apt-cache search java | awk '{print($1)}' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e 'java-common' | xargs sudo apt-get -y remove
         apt-get -y autoremove
-        dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt-get -y purge
-        bash -c 'ls -d /home/*/.java' | xargs sudo rm -rf
-        rm -rf /usr/lib/jvm/*
         
         apt-get purge openjdk*
         apt-get autoremove
