@@ -86,8 +86,38 @@ Linux
 Android
 ----------
 
-* install tool chain(ubuntu 12.04 64bit)
- 
+* prepare environment (ubuntu 12.04 64bit)
+
+        #remove old java
+        
+        apt-get update
+        apt-cache search java | awk '{print($1)}' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e 'java-common' | xargs sudo apt-get -y remove
+        apt-get -y autoremove
+        dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt-get -y purge
+        bash -c 'ls -d /home/*/.java' | xargs sudo rm -rf
+        rm -rf /usr/lib/jvm/*
+        
+        apt-get purge openjdk*
+        apt-get autoremove
+        
+        #check java no exist
+        java -version
+  
+
+        #install oracle java jdk
+        
+        #download jdk from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+        umcompress to /usr/local
+        
+        vi /etc/environment
+        
+        PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/jdk1.7.0_25/bin"
+        JAVA_HOME="/usr/local/jdk1.7.0_25/"
+        CLASSPATH=".:/usr/local/jdk1.7.0_25/lib/dt.jar:/usr/local/jdk1.7.0_25/lib/tools.jar"
+        
+        #check java exist
+        java -version
+
 
 
 * download sdk
