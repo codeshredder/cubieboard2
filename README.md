@@ -107,15 +107,14 @@ Android
   
 
         #install oracle java jdk
-        
-        #download jdk from http://www.oracle.com/technetwork/java/javase/downloads/index.html
-        umcompress to /usr/local
+        #download jdk1.6.0_45 from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+        #umcompress to /usr/local
         
         vi /etc/environment
         
-        PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/jdk1.7.0_25/bin"
-        JAVA_HOME="/usr/local/jdk1.7.0_25/"
-        CLASSPATH=".:/usr/local/jdk1.7.0_25/lib/dt.jar:/usr/local/jdk1.7.0_25/lib/tools.jar"
+        PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/jdk1.6.0_45/bin"
+        JAVA_HOME="/usr/local/jdk1.6.0_45/"
+        CLASSPATH=".:/usr/local/jdk1.6.0_45/lib/dt.jar:/usr/local/jdk1.6.0_45/lib/tools.jar"
         
         #check java exist
         java -version
