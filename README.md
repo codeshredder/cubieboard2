@@ -86,13 +86,23 @@ Linux
 Android
 ----------
 
-* Reference
-
-        http://releases.linaro.org/latest/android/galaxynexus
-
-
 * install tool chain(ubuntu 12.04 64bit)
  
+
+
+* download sdk
+
+        http://cubiebook.org/index.php?title=Cubieboard2/Building_your_own_Android_image
+
+* make
+
+        $cd lichee
+        $./build.sh -p sun7i_android
+        $cd ../android42
+        $source build/envsetup.sh
+        $lunch (select sugar-cubieboard2)
+        $extract-bsp
+        $make -j4
 
 
 
