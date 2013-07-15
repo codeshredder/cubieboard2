@@ -42,7 +42,7 @@ Tools
 
 download LiveSuit from http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 
-install
+install LiveSuit
 
         ./LiveSuit.run
         cd ~/Bin
@@ -55,6 +55,12 @@ install
         ATTRS{idVendor}=="1f3a", ATTRS{idProduct}=="efe8", GROUP="root", MODE="0666"
         LABEL="objdev_rules_end"
 
+root linux
+
+use LiveSuit
+
+        cd ~/bin/LiveSuit
+        ./LiveSuit.sh
 
 
 Linux
