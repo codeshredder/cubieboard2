@@ -40,7 +40,20 @@ Tools
 
 * LiveSuit
 
+download LiveSuit from http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 
+install
+
+        ./LiveSuit.run
+        cd ~/Bin
+        dpkg -i awdev-dkms_0.4_all.deb
+
+        vi /etc/udev/rules.d/10-local.rules
+
+        SUBSYSTEM!="usb_device", ACTION!="add", GOTO="objdev_rules_end"
+        #USBasp
+        ATTRS{idVendor}=="1f3a", ATTRS{idProduct}=="efe8", GROUP="root", MODE="0666"
+        LABEL="objdev_rules_end"
 
 
 
