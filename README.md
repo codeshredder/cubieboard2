@@ -33,39 +33,39 @@ http://cn.cubieboard.org/
 Tools
 ----------
 
-* TTL and console
+### TTL and console
 
 
 
 
-* LiveSuit
+### LiveSuit
 
-1) download LiveSuit 
+* download LiveSuit 
 
 [Ubuntu x86](http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP)
 
 [Ubuntu x86-64](http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n)
 
 
-2) install LiveSuit
+* install LiveSuit
 
-    ./LiveSuit.run
-    cd ~/Bin
-    dpkg -i awdev-dkms_0.4_all.deb
+        ./LiveSuit.run
+        cd ~/Bin
+        dpkg -i awdev-dkms_0.4_all.deb
 
-    vi /etc/udev/rules.d/10-local.rules
+        vi /etc/udev/rules.d/10-local.rules
 
-    SUBSYSTEM!="usb_device", ACTION!="add", GOTO="objdev_rules_end"
-    #USBasp
-    ATTRS{idVendor}=="1f3a", ATTRS{idProduct}=="efe8", GROUP="root", MODE="0666"
-    LABEL="objdev_rules_end"
+        SUBSYSTEM!="usb_device", ACTION!="add", GOTO="objdev_rules_end"
+        #USBasp
+        ATTRS{idVendor}=="1f3a", ATTRS{idProduct}=="efe8", GROUP="root", MODE="0666"
+        LABEL="objdev_rules_end"
 
-3) root linux
+* root linux
 
-4) use LiveSuit
+* use LiveSuit
 
-    cd ~/bin/LiveSuit
-    ./LiveSuit.sh
+        cd ~/bin/LiveSuit
+        ./LiveSuit.sh
 
 
 Linux
