@@ -27,8 +27,7 @@ About Cubieboard
 
 http://cubieboard.org/
 
-http://cn.cubieboard.org/
-
+http://cubiebook.org
 
 Tools
 ----------
@@ -60,7 +59,7 @@ Tools
         ATTRS{idVendor}=="1f3a", ATTRS{idProduct}=="efe8", GROUP="root", MODE="0666"
         LABEL="objdev_rules_end"
 
-* root linux
+* reboot linux
 
 * use LiveSuit
 
