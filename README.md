@@ -79,6 +79,7 @@ Linux
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
         apt-get install linaro-image-tools
+        apt-get install libncurses5-dev
 
 * build kernel
 
