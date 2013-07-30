@@ -1,5 +1,5 @@
 
-Software and User Guide
+User Guide
 ==========================================================
 
 .. contents::
