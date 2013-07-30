@@ -1,15 +1,17 @@
+
 Software and User Guide
 ==========================================================
 
+.. contents::
 
 Authors
-----------
+==========
 
-[codeshredder](https://github.com/codeshredder)
+`codeshredder <https://github.com/codeshredder>`_ 
 
 
 Reference
-----------
+==========
 
 
 http://linux-sunxi.org/
@@ -22,7 +24,7 @@ http://source.android.com/source/initializing.html
 
 
 About Cubieboard
-----------
+==========
 
 
 http://cubieboard.org/
@@ -30,23 +32,24 @@ http://cubieboard.org/
 http://cubiebook.org
 
 Tools
+==========
+
+TTL and console
 ----------
 
-### TTL and console
 
 
-
-
-### LiveSuit
+LiveSuit
+----------
 
 * download LiveSuit 
 
-[Ubuntu x86](http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP)
+Ubuntu x86: http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP
 
-[Ubuntu x86-64](http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n)
+Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 
 
-* install LiveSuit(no root)
+* install LiveSuit(no root)::
 
         ./LiveSuit.run
         cd ~/Bin
@@ -60,28 +63,28 @@ Tools
         LABEL="objdev_rules_end"
         #"user" must be current user
 
-* reboot linux
+* reboot linux::
 
         sudo reboot
 
-* use LiveSuit
+* use LiveSuit::
 
         cd ~/bin/LiveSuit
         ./LiveSuit.sh
 
 
 Linux
-----------
+==========
 
 
-* install tool chain(ubuntu 12.04 64bit)
+* install tool chain(ubuntu 12.04 64bit)::
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
         apt-get install linaro-image-tools
         apt-get install libncurses5-dev
 
-* build kernel
+* build kernel::
 
         make distclean ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
         make cubieboard2_defconfig ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
@@ -95,7 +98,7 @@ Linux
         make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 
-* build gpu driver
+* build gpu driver::
 
         http://linux-sunxi.org/Mali400
         http://linux-sunxi.org/Binary_drivers
@@ -113,9 +116,9 @@ Linux
 
 
 Android
-----------
+==========
 
-* prepare java environment (ubuntu 12.04 64bit)
+* prepare java environment (ubuntu 12.04 64bit)::
 
         #remove old java
         
@@ -143,7 +146,7 @@ Android
         #check java exist
         java -version
 
-* prepare android environment (ubuntu 12.04 64bit)
+* prepare android environment (ubuntu 12.04 64bit)::
 
         apt-get install git gnupg flex bison gperf build-essential \
         zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -154,11 +157,11 @@ Android
         ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 
 
-* download sdk
+* download sdk::
 
         http://cubiebook.org/index.php?title=Cubieboard2/Building_your_own_Android_image
 
-* make
+* make::
 
         $cd lichee
         $./build.sh -p sun7i_android
@@ -171,14 +174,13 @@ Android
 
 
 Licensing
-----------
+============
 
 This project is licensed under Creative Commons License.
 
 To view a copy of this license, visit [ http://creativecommons.org/licenses/ ].
 
-
 Contacts
-----------
+===========
 
 codeshredder  : evilforce@gmail.com
