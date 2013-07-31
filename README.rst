@@ -2,7 +2,8 @@
 User Guide
 ============
 
-.. contents::
+.. contents:: :local:
+
 
 Authors
 ==========
@@ -76,6 +77,8 @@ Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 Linux
 ==========
 
+make image
+----------
 
 * install tool chain(ubuntu 12.04 64bit)::
 
@@ -112,6 +115,14 @@ Linux
 * make image
 
 
+tips
+----------
+
+* no audio
+
+::
+
+   usermod -a -G audio username 
 
 
 
