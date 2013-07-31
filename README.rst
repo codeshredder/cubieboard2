@@ -43,7 +43,7 @@ TTL and console
 LiveSuit
 ----------
 
-linux
+linux version
 ++++++++++
 
 * download LiveSuit 
