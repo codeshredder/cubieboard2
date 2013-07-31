@@ -43,6 +43,9 @@ TTL and console
 LiveSuit
 ----------
 
+linux
+++++++++++
+
 * download LiveSuit 
 
 Ubuntu x86: http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP
