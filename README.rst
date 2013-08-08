@@ -104,13 +104,8 @@ make image
         make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 
-* build gpu driver::
 
-        http://linux-sunxi.org/Mali400
-        http://linux-sunxi.org/Binary_drivers
-
-
-* make hwpack
+* make rootfs
 
 
 
