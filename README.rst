@@ -80,6 +80,17 @@ Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 Linux
 ==========
 
+
+get kernel source
+----------
+
+* install tool chain(ubuntu 12.04 64bit)::
+
+        git clone https://github.com/cubieboard2/linux-sunxi
+        git branch -r
+        git checkout -b 本地分支名 远程分支名
+
+
 make image
 ----------
 
