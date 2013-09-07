@@ -88,7 +88,7 @@ get kernel source
 
         git clone https://github.com/cubieboard2/linux-sunxi
         git branch -r
-        git checkout -b 本地分支名 远程分支名
+        git checkout -b localbranchname remotebranchname
 
 
 make image
