@@ -124,7 +124,7 @@ make image
 * make image
 
 
-tips
+Q&A
 ----------
 
 * no audio
@@ -132,7 +132,6 @@ tips
 ::
 
    usermod -a -G audio username 
-
 
 
 Android
@@ -191,6 +190,13 @@ Android
         $extract-bsp
         $make -j4
 
+
+Application
+==========
+
+* camera::
+
+        http://forum.ubuntu.org.cn/viewtopic.php?f=74&t=400632
 
 
 Licensing
