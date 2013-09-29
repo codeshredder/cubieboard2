@@ -197,6 +197,7 @@ Application
 * camera::
 
         http://forum.ubuntu.org.cn/viewtopic.php?f=74&t=400632
+        http://javacxn.blog.163.com/blog/static/1832776420123685922407
 
 
 Licensing
