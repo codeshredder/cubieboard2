@@ -35,7 +35,7 @@ http://cubiebook.org
 Tools
 ==========
 
-TTL/console
+TTL cable
 ----------
 
 1) cable	Pin on Cubieboard
