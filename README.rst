@@ -66,6 +66,44 @@ step2:install driver
 download "PL2303_Prolific_DriverInstaller_v1.5.0.exe" and install
 
 
+console
+----------
+
+linux
+++++++++++
+
+#apt-get install ckermit
+
+#vi ~/.mykermrc
+
+set line          /dev/ttyUSB0
+
+set speed         115200
+
+set carrier-watch off
+
+set handshake     none
+
+set flow-control  none
+
+robust
+
+set file type     bin
+
+set file name     lit
+
+set rec pack      1000
+
+set send pack     1000
+
+set window        5
+
+
+
+#kermit -c
+
+
+
 LiveSuit
 ----------
 
