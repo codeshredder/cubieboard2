@@ -38,6 +38,31 @@ Tools
 TTL and console
 ----------
 
+1)
+Cable	Pin on Cubieboard
+PIN1 (WHITE)	TX
+PIN2 (GREEN)	RX
+GROUND (BLACK)	GND
+WARNING: DO NOT CONNECT THE RED LINE TO VCC.
+
+2)
+
+pl2303 ttl may have problem on win8 x86/64:
+
+(because of win8 driver auto update)
+ 
+step1:close win8 driver auto update
+ 
+into win8 control panel：search｜device ｜
+
+find "device printer" -> "change update"
+ 
+set "no"and “never install from ...”
+
+ 
+step2:install driver
+ 
+download "PL2303_Prolific_DriverInstaller_v1.5.0.exe" and install
 
 
 LiveSuit
