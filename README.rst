@@ -40,9 +40,13 @@ TTL and console
 
 1)
 Cable	Pin on Cubieboard
-PIN1 (WHITE)	TX
-PIN2 (GREEN)	RX
-GROUND (BLACK)	GND
+
+PIN1 (WHITE)   -> TX
+
+PIN2 (GREEN)   -> RX
+
+GROUND (BLACK) -> GND
+
 WARNING: DO NOT CONNECT THE RED LINE TO VCC.
 
 2)
