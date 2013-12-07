@@ -35,11 +35,10 @@ http://cubiebook.org
 Tools
 ==========
 
-TTL and console
+TTL/console
 ----------
 
-1)
-Cable	Pin on Cubieboard
+1) cable	Pin on Cubieboard
 
 PIN1 (WHITE)   -> TX
 
@@ -49,11 +48,9 @@ GROUND (BLACK) -> GND
 
 WARNING: DO NOT CONNECT THE RED LINE TO VCC.
 
-2)
+2) install driver
 
-pl2303 ttl may have problem on win8 x86/64:
-
-(because of win8 driver auto update)
+pl2303 cable may have problem on win8 x86/64.(because of win8 driver auto update)
  
 step1:close win8 driver auto update
  
