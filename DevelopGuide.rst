@@ -141,6 +141,18 @@ Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
         ./LiveSuit.sh
 
 
+
+u-boot
+==========
+
+reference
+----------
+
+https://github.com/linux-sunxi/u-boot-sunxi/wiki
+
+
+
+
 Linux
 ==========
 
