@@ -1,5 +1,5 @@
 ============
-Develop Guide
+Cubieboard2 Develop Guide
 ============
 
 .. contents:: :local:
