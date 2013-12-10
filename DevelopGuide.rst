@@ -194,7 +194,7 @@ make image
 
 * make rootfs
 
-
+http://sigpipe.me/?p=10
 
 
 * make image
