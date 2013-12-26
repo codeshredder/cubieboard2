@@ -179,7 +179,7 @@ sunxi-tool
 http://cn.cubieboard.org/forum.php?mod=viewthread&tid=141&highlight=script
 
 
-prepare ubuntu 12.04
+install toolchain
 ----------
 
 ::
@@ -235,7 +235,7 @@ get kernel source
 make image
 ----------
 
-* install tool chain(ubuntu 12.04 64bit)::
+* install toolchain::
 
         apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf build-essential
         apt-get install u-boot-tools
