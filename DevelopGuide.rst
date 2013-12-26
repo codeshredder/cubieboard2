@@ -32,7 +32,8 @@ http://cubieboard.org/
 
 http://cubiebook.org
 
-Tools
+
+Debug and Flash Tools
 ==========
 
 TTL cable
@@ -40,11 +41,9 @@ TTL cable
 
 1) cable	Pin on Cubieboard
 
-PIN1 (WHITE)   -> TX
-
-PIN2 (GREEN)   -> RX
-
-GROUND (BLACK) -> GND
+        PIN1 (WHITE)   -> TX
+        PIN2 (GREEN)   -> RX
+        GROUND (BLACK) -> GND
 
 WARNING: DO NOT CONNECT THE RED LINE TO VCC.
 
@@ -72,49 +71,43 @@ console
 linux
 ++++++++++
 
-#apt-get install ckermit
-
-#vi ~/.mykermrc
-
-set line          /dev/ttyUSB0
-
-set speed         115200
-
-set carrier-watch off
-
-set handshake     none
-
-set flow-control  none
-
-robust
-
-set file type     bin
-
-set file name     lit
-
-set rec pack      1000
-
-set send pack     1000
-
-set window        5
+        apt-get install ckermit
+        vi ~/.mykermrc
+        
+        set line          /dev/ttyUSB0
+        set speed         115200
+        set carrier-watch off
+        set handshake     none
+        set flow-control  none
+        robust
+        set file type     bin
+        set file name     lit
+        set rec pack      1000
+        set send pack     1000
+        set window        5
 
 
+        kermit -c
 
-#kermit -c
+
+windows
+++++++++++
+
+
+putty
 
 
 
 LiveSuit
 ----------
 
-linux version
+linux
 ++++++++++
 
 * download LiveSuit 
 
-Ubuntu x86: http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP
-
-Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
+        Ubuntu x86: http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP
+        Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 
 
 * install LiveSuit(no root)::
@@ -139,6 +132,12 @@ Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 
         cd ~/bin/LiveSuit
         ./LiveSuit.sh
+
+
+windows
+++++++++++
+
+
 
 
 
@@ -171,6 +170,40 @@ write to tfcard
         dd if=u-boot.img of=/dev/sdc bs=1024 seek=40
         
         fdisk /dev/sdc
+
+sunxi-tool
+==========
+
+
+http://cn.cubieboard.org/forum.php?mod=viewthread&tid=141&highlight=script
+
+compile
+----------
+
+
+        git clone https://github.com/linux-sunxi/sunxi-tools.git
+        or
+        tar xvf sunxi-tools.tar.bz2
+        
+        cd sunxi-tools/
+        make
+
+use
+----------
+
+        ./bin2fex script.bin > ./script.fex 
+        ./fex2bin script.fex > ./script.bin
+        
+        vi ./script.fex
+
+fex_guide： http://linux-sunxi.org/Fex_Guide
+
+
+for example:
+(change eth0 mac)
+
+        [dynamic]
+        MAC = "00e0fcfc1234
 
 
 Linux
