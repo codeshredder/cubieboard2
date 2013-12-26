@@ -151,6 +151,26 @@ reference
 https://github.com/linux-sunxi/u-boot-sunxi/wiki
 
 
+* compile
+
+        git clone https://github.com/linux-sunxi/u-boot-sunxi.git
+        or
+        tar xvf u-boot-sunxi.tar.bz2
+        
+        cd u-boot-sunxi
+        
+        make cubieboard2 CROSS_COMPILE=arm-linux-gnueabihf-
+
+* write to tfcard
+
+        dd if=/dev/zero of=/dev/sdc bs=1M count=1
+        
+        dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8
+        or
+        dd if=spl/sunxi-spl.bin of=/dev/sdc bs=1024 seek=8
+        dd if=u-boot.img of=/dev/sdc bs=1024 seek=40
+        
+        fdisk /dev/sdc
 
 
 Linux
