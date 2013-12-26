@@ -235,11 +235,12 @@ github
         git checkout -b localbranchname remotebranchname
 
 
-github
+download
 ++++++++++
 
 ::
 
+        from http://docs.cubieboard.org/tutorials/a20-cubieboard_lubuntu_desktop_releases
         download kernel-source.tar.bz2
 
 
