@@ -145,13 +145,12 @@ Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
 u-boot
 ==========
 
-reference
-----------
 
 https://github.com/linux-sunxi/u-boot-sunxi/wiki
 
 
-* compile
+compile
+----------
 
         git clone https://github.com/linux-sunxi/u-boot-sunxi.git
         or
@@ -161,7 +160,8 @@ https://github.com/linux-sunxi/u-boot-sunxi/wiki
         
         make cubieboard2 CROSS_COMPILE=arm-linux-gnueabihf-
 
-* write to tfcard
+write to tfcard
+----------
 
         dd if=/dev/zero of=/dev/sdc bs=1M count=1
         
