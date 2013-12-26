@@ -222,14 +222,25 @@ Linux
 ==========
 
 
-get kernel source
+get source
 ----------
 
-* github::
+github
+++++++++++
+
+::
 
         git clone https://github.com/cubieboard2/linux-sunxi
         git branch -r
         git checkout -b localbranchname remotebranchname
+
+
+github
+++++++++++
+
+::
+
+        download kernel-source.tar.bz2
 
 
 make image
@@ -262,17 +273,30 @@ make image
 http://sigpipe.me/?p=10
 
 
-* make image
 
 
-Q&A
+
+linux application
 ----------
 
-* no audio
+no audio
+++++++++++
 
 ::
 
    usermod -a -G audio username 
+
+
+router
+++++++++++
+
+
+
+NAS
+++++++++++
+
+
+
 
 
 Android
