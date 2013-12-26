@@ -39,7 +39,7 @@ Debug and Flash Tools
 TTL cable
 ----------
 
-1) cable	Pin on Cubieboard
+1) cable Pin on Cubieboard::
 
         PIN1 (WHITE)   -> TX
         PIN2 (GREEN)   -> RX
@@ -50,19 +50,16 @@ WARNING: DO NOT CONNECT THE RED LINE TO VCC.
 2) install driver
 
 pl2303 cable may have problem on win8 x86/64.(because of win8 driver auto update)
- 
-step1:close win8 driver auto update
- 
-into win8 control panel：search｜device ｜
 
-find "device printer" -> "change update"
- 
-set "no"and “never install from ...”
+::
 
- 
-step2:install driver
- 
-download "PL2303_Prolific_DriverInstaller_v1.5.0.exe" and install
+        step1:close win8 driver auto update
+        into win8 control panel：search｜device ｜
+        find "device printer" -> "change update"
+        set "no"and “never install from ...”
+        
+        step2:install driver
+        download "PL2303_Prolific_DriverInstaller_v1.5.0.exe" and install
 
 
 console
@@ -70,6 +67,8 @@ console
 
 linux
 ++++++++++
+
+::
 
         apt-get install ckermit
         vi ~/.mykermrc
@@ -86,15 +85,15 @@ linux
         set send pack     1000
         set window        5
 
-
         kermit -c
 
 
 windows
 ++++++++++
 
+::
 
-putty
+        putty
 
 
 
@@ -104,7 +103,7 @@ LiveSuit
 linux
 ++++++++++
 
-* download LiveSuit 
+* download LiveSuit::
 
         Ubuntu x86: http://ubuntuone.com/2bf1fIHN3oFR5NRyggJqPP
         Ubuntu x86-64: http://ubuntuone.com/1Q5Yi3eVAzS2xn3Ex7Ix3n
@@ -140,7 +139,6 @@ windows
 
 
 
-
 u-boot
 ==========
 
@@ -150,6 +148,7 @@ https://github.com/linux-sunxi/u-boot-sunxi/wiki
 
 compile
 ----------
+::
 
         git clone https://github.com/linux-sunxi/u-boot-sunxi.git
         or
@@ -161,6 +160,7 @@ compile
 
 write to tfcard
 ----------
+::
 
         dd if=/dev/zero of=/dev/sdc bs=1M count=1
         
@@ -171,15 +171,27 @@ write to tfcard
         
         fdisk /dev/sdc
 
+
 sunxi-tool
 ==========
 
 
 http://cn.cubieboard.org/forum.php?mod=viewthread&tid=141&highlight=script
 
+
+prepare ubuntu 12.04
+----------
+
+::
+
+        apt-get install build-essential u-boot-tools qemu-user-static debootstrap emdebian-archive-keyring git libusb-1.0-0-dev pkg-config
+        apt-get install gcc-arm-linux-gnueabi
+
+
 compile
 ----------
 
+::
 
         git clone https://github.com/linux-sunxi/sunxi-tools.git
         or
@@ -190,6 +202,7 @@ compile
 
 use
 ----------
+::
 
         ./bin2fex script.bin > ./script.fex 
         ./fex2bin script.fex > ./script.bin
@@ -199,8 +212,7 @@ use
 fex_guide： http://linux-sunxi.org/Fex_Guide
 
 
-for example:
-(change eth0 mac)
+for example(change eth0 mac)::
 
         [dynamic]
         MAC = "00e0fcfc1234
@@ -213,7 +225,7 @@ Linux
 get kernel source
 ----------
 
-* install tool chain(ubuntu 12.04 64bit)::
+* github::
 
         git clone https://github.com/cubieboard2/linux-sunxi
         git branch -r
