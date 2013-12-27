@@ -133,11 +133,6 @@ linux
         ./LiveSuit.sh
 
 
-windows
-++++++++++
-
-
-
 
 u-boot
 ==========
@@ -268,33 +263,33 @@ make image
         make modules_install INSTALL_MOD_PATH=../output ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 
 
+make rootfs
+----------
 
-* make rootfs
 
 http://sigpipe.me/?p=10
 
 
+xwindows
+++++++++++
+
+
+language support
+++++++++++
+
+
+samba
+++++++++++
 
 
 
-linux application
-----------
-
-no audio
+audio
 ++++++++++
 
 ::
 
    usermod -a -G audio username 
 
-
-router
-++++++++++
-
-
-
-NAS
-++++++++++
 
 
 
@@ -360,7 +355,20 @@ Android
 Application
 ==========
 
-* camera::
+
+router
+----------
+
+
+NAS
+----------
+
+
+
+camera
+----------
+
+::
 
         http://forum.ubuntu.org.cn/viewtopic.php?f=74&t=400632
         http://javacxn.blog.163.com/blog/static/1832776420123685922407
