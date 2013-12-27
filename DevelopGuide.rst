@@ -298,6 +298,10 @@ audio
 Android
 ==========
 
+
+build rom
+----------
+
 * prepare java environment (ubuntu 12.04 64bit)::
 
         #remove old java
@@ -350,6 +354,13 @@ Android
         $lunch (select sugar-cubieboard2)
         $extract-bsp
         $make -j4
+
+
+use android
+----------
+
+
+
 
 
 Application
