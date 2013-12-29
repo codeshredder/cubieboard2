@@ -266,8 +266,11 @@ make image
 make rootfs
 ----------
 
-
 http://sigpipe.me/?p=10
+
+base fs
+++++++++++
+
 
 
 xwindows
@@ -291,6 +294,8 @@ audio
    usermod -a -G audio username 
 
 
+tf image
+----------
 
 
 
