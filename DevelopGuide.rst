@@ -268,17 +268,31 @@ make rootfs
 
 http://sigpipe.me/?p=10
 
-base fs
+basic fs
 ++++++++++
 
-
-
-xwindows
+time zone
 ++++++++++
 
+::
 
-language support
+    apt-get install ntp
+    dpkg-reconfigure tzdata
+
+xwindows and language support
 ++++++++++
+
+::
+
+    apt-get install xfce4
+    apt-get install synaptic
+
+    apt-get install language-selector-gnome
+    /* goto startmenu, language support, add chinese */
+    apt-get install ttf-wqy-microhei
+
+    apt-get install ibus ibus-pinyin
+    apt-get install firefox
 
 
 samba
@@ -291,12 +305,28 @@ audio
 
 ::
 
-   usermod -a -G audio username 
+    usermod -a -G audio username 
 
 
-tf image
+sample tf image
 ----------
 
+* download::
+
+   
+    2013-12-24
+    1) base on linaro ubuntu developer
+    2) integrate xfce and language support
+    3) integrate ssh,samba,vim...
+    4) support wireless router mode (8188eu)
+    
+    http://pan.baidu.com/s/1kT2rfL1
+    
+   
+
+* use::
+
+    dd if=xxx.img of=/dev/(tf device) 
 
 
 
