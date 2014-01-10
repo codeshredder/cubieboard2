@@ -405,6 +405,28 @@ Application
 router
 ----------
 
+iptable
+++++++++++
+
+
+openvswitch
+++++++++++
+
+::
+
+    apt-get install autoconf automake libtool
+    tar xvf xxx.tar.bz2
+    cd openvswitch
+    ./boot.sh
+    ./configure --with-linux=/lib/modules/`uname -r`/build
+    make
+    
+    <cross build>
+    cd openvswitch
+    ./boot.sh
+    ./configure KARCH=arm --with-linux=<path/to/linux-build> --with-linux-source=</path/to/linux-source>
+    make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+
 
 NAS
 ----------
