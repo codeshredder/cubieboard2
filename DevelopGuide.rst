@@ -406,7 +406,7 @@ router
 ----------
 
 
-1.config hostapd
+config hostapd
 ++++++++++
 
 (download drivers)
