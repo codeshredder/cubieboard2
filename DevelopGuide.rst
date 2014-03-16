@@ -405,9 +405,71 @@ Application
 router
 ----------
 
-iptable
+
+1.config hostapd
 ++++++++++
 
+(download drivers)
+http://www.realtek.com/downloads/downloadsView.aspx?Langid=1&PNid=48&PFid=48&Level=5&Conn=4&DownTypeID=3&GetDown=false&Downloads=true#RTL8188CUS
+RTL8188C_8192C_USB_linux_v4.0.2_9000.20130911.zip
+
+
+(build hostapd)
+
+    cd RTL8188C_8192C_USB_linux_v4.0.2_9000.20130911/wpa_supplicant_hostapd
+    unzip wpa_supplicant_hostapd-0.8_rtw_r7475.20130812.tar.gz
+
+    cd wpa_supplicant_hostapd-0.8/hostapd
+    make clean
+    make CC=arm-linux-gnueabi-gcc
+    
+生成hostapd，拷贝到cb开发板的/sbin目录。
+同时拷贝 RTL8188C_8192C_USB_linux_v4.0.2_9000.20130911/wpa_supplicant_hostapd/rtl_hostapd_2G.conf到cb开发板的/etc目录下
+
+
+(build wireless_tools)
+    cd RTL8188C_8192C_USB_linux_v4.0.2_9000.20130911/wireless_tools
+    tar -zxvf wireless_tools.30.rtl.tar.gz
+    cd wireless_tools.30.rtl
+    make clean
+    make CC=arm-linux-gnueabi-gcc
+
+生成iwconfig与iwlib.so，拷贝iwconfig到cb开发板的/sbin目录下，拷贝iwlib.so到cb开发板的/lib目录下
+
+(run)
+insmod 8188eu.ko
+ifconfig wlan0 up
+hostapd -B /etc/rtl_hostapd_2G.conf
+
+
+ifconfig wlan0 up
+iwconfig wlan0 mode master
+
+
+hostapd -B /etc/rtl_hostapd_2G.conf
+
+
+config dhcp
+++++++++++
+
+apt-get install isc-dhcp-server
+
+vi /etc/default/isc-dhcp-server
+
+INTERFACES=”wlan0″
+
+vi /etc/dhcp/dhcpd.conf
+
+subnet 192.168.2.0 netmask 255.255.255.0
+{
+    range 192.168.2.10 192.168.2.99;
+    option routers 192.168.2.1;
+    option domain-name-servers 8.8.8.8;
+}
+
+ifconfig wlan0 192.168.2.1
+
+/etc/init.d/isc-dhcp-server restart
 
 
 
